@@ -1,20 +1,28 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 main {
-  width: 400px;
+  width: 450px;
   background-color: #283e50;
   color: #ffffff;
-  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 4rem;
 }
 
 img {
   width: 100%;
 }
 
-main, image {
+main, img {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -22,4 +30,33 @@ h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
   padding: 0 4rem;
+  letter-spacing: 0.1rem;
+}
+
+p { 
+  padding: 1rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.btn--pravidla {
+  background-color: #1fcca4;
+}
+
+.btn--hra {
+  background-color: #0197f6;
+}
+
+.btn--hra, .btn--pravidla {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+.btn--pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.btn--hra:hover {
+  background-color: #0090e9;
 }
