@@ -15,7 +15,7 @@ main {
   display: flex;
   text-align: center;
   flex-direction: column;
-  margin-top: 4rem;
+  margin: 4rem auto;
 }
 
 img {
@@ -29,18 +29,17 @@ main, img {
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
-  padding: 0 4rem;
   letter-spacing: 0.1rem;
 }
 
 p { 
   padding: 1rem;
   margin-top: 0;
-  padding-top: 0;
 }
 
 .btn--pravidla {
   background-color: #1fcca4;
+  margin-bottom: 0.1rem;
 }
 
 .btn--hra {
