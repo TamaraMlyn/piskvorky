@@ -5,7 +5,7 @@ body {
   height: 100vh;
 }
 
-.content {
+.main {
   width: 450px;
   background-color: #283e50;
   color: #ffffff;
@@ -18,23 +18,34 @@ body {
   margin: 4rem auto;
 }
 
-img {
+.main__image {
   width: 100%;
 }
 
-.content, img {
+.main, .main__image {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
+  font-weight: normal;
   letter-spacing: 0.1rem;
+  margin: 1rem 0;
 }
 
 p { 
-  padding: 1rem;
-  margin-top: 0;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.main__content {
+  padding: 2rem 1rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn--rules {
@@ -52,10 +63,12 @@ p {
   padding: 1rem 0;
 }
 
-.btn--rules:hover {
+.btn--rules:hover,
+.btn--rules:focus {
   background-color: #1cbb96;
 }
 
-.btn--play:hover {
+.btn--play:hover,
+.btn--play:focus {
   background-color: #0090e9;
 }
