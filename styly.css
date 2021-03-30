@@ -70,14 +70,16 @@ p {
   color: var(--primary-color);
 }
 
-.btn--rules {
+.btn--rules, .btn--home {
   background-color: var(--green);
   margin-bottom: 0.1rem;
   padding: 1rem 0;
 }
 
 .btn--rules:hover,
-.btn--rules:focus {
+.btn--rules:focus, 
+.btn--home:hover,
+.btn--home:focus {
   background-color: var(--green-hover);
 }
 
@@ -89,4 +91,21 @@ p {
 .btn--play:hover,
 .btn--play:focus {
   background-color: var(--blue-hover);
+}
+
+/* pravidla */
+ol {
+  margin: 1rem 3rem;
+}
+
+li {
+  text-align: left;
+  padding: 0 0 1rem 1rem;
+  line-height: normal;
+}
+
+.symbol {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
 }
