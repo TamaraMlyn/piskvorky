@@ -16,14 +16,15 @@ html { box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(#615dad, #ffc8da);
-  min-height: 100vh;
-  background-repeat: no-repeat;
+
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-align: center;
+  background-image: linear-gradient(#615dad, #ffc8da);
+  min-height: 100vh;
+  background-repeat: no-repeat;
 }
 
 .main {
@@ -58,7 +59,6 @@ p {
 
 .btn {
   display: block;
-  flex-direction: column;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -105,6 +105,7 @@ p {
   filter: invert(100%);
   width: 1em;
   height: 1em;
+  vertical-align: -0.1em;
 }
 
 
