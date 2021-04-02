@@ -5,7 +5,7 @@ html { box-sizing: border-box;
 *::after, 
 *::before { box-sizing: inherit; }
 
-/* variables */
+
 :root {
   --primary-color: #ffffff;
   --dark-blue: #283e50;
@@ -15,24 +15,21 @@ html { box-sizing: border-box;
   --blue-hover: #0090e9;
 }
 
-/* background */
-
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
-  height: 100vh;
-}
-
-/* content */
-
-.main {
-  width: 450px;
-  background-color: var(--dark-blue);
+  min-height: 100vh;
+  background-repeat: no-repeat;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  display: flex;
   text-align: center;
+}
+
+.main {
+  width: 450px;
+  background-color: var(--dark-blue);
+  display: flex;
   flex-direction: column;
   margin: 4rem auto;
 }
@@ -49,7 +46,6 @@ h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
   font-weight: normal;
-  letter-spacing: 0.1rem;
   margin: 3rem 0 2rem 0;
 }
 
@@ -57,11 +53,8 @@ p {
   padding: 1rem;
 }
 
-/* .main__content {
-  padding: 2rem 1rem;
-} */
 
-/* buttons */
+/* ----------- buttons ----------- */
 
 .btn {
   display: block;
@@ -93,19 +86,58 @@ p {
   background-color: var(--blue-hover);
 }
 
-/* pravidla */
-ol {
+.btn--home {
+  margin-top: 1.5rem;
+}
+
+/* ------------- rules ------------ */
+.list {
   margin: 1rem 3rem;
 }
 
-li {
+.list__item {
   text-align: left;
   padding: 0 0 1rem 1rem;
   line-height: normal;
 }
 
-.symbol {
+.icon {
   filter: invert(100%);
   width: 1em;
   height: 1em;
 }
+
+
+/* ------------ images + descriptions ------------ */
+
+.instructions__picture {
+  width: 100%;
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+/* ------------ responsive design ------------ */
+
+@media (min-width: 840px) {
+  .main__rules {
+    width: 750px;
+  }
+  
+  .main__instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .instructions__block {
+    margin: 0;
+    width: 45%;
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 840px)
