@@ -28,7 +28,7 @@ body {
 }
 
 .main {
-  width: 450px;
+  max-width: 450px;
   background-color: var(--dark-blue);
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@ figcaption {
 
 @media (min-width: 840px) {
   .main__rules {
-    width: 750px;
+    max-width: 750px;
   }
   
   .main__instructions {
@@ -140,5 +140,3 @@ figcaption {
     margin: 20px 0;
   }
 }
-
-@media (min-width: 840px)
