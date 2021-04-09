@@ -140,3 +140,56 @@ figcaption {
     margin: 20px 0;
   }
 }
+
+
+/* ---------------- play -------------- */
+
+.main__game {
+  max-width: 80vmin;
+}
+
+.main__player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--game {
+  font-size: 4rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.game__buttons {
+  display: flex;
+  margin: 0;
+}
+
+.home {
+  background-color: var(--green);
+  margin-right: 10px;
+}
+
+.restart {
+  background-color: var(--blue);
+}
+
+.game__btn {
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.main__field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px;
+  margin: 0;
+  border: 1px solid black;
+  opacity: 50%;
+}
