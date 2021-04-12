@@ -148,6 +148,7 @@ figcaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .header--game {
@@ -157,10 +158,19 @@ figcaption {
 .content__text {
   text-transform: uppercase;
   text-align: left;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .content__info--right {
   display: flex;
+}
+
+.content__info--left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .btn--green--game {
@@ -196,4 +206,6 @@ figcaption {
 .game__board button:hover,
 .game__board button:focus {
   background-color: var(--btn-hover);
+  cursor: pointer;
+  outline: none;
 }
