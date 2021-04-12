@@ -142,6 +142,7 @@ figcaption {
 
 .main__game {
   max-width: 80vmin;
+  margin: auto;
 }
 
 .content__info {
