@@ -213,6 +213,6 @@ figcaption {
   outline: none;
 }
 
-.game__board:nth-child(10n) {
+button:nth-child(10n) {
   flex-grow: 1;
 }
