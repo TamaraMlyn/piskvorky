@@ -216,3 +216,20 @@ figcaption {
 button:nth-child(10n) {
   flex-grow: 1;
 }
+
+.board__field--circle {
+  background-image: url('images/circle.svg');
+}
+
+.board__field--cross {
+  background-image: url('images/cross.svg');
+}
+
+.board__field--circle, 
+.board__field--cross {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  animation-duration: 0.2s;
+  animation-name: gradual-growth;
+}
