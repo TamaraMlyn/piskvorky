@@ -233,3 +233,7 @@ button:nth-child(10n) {
   animation-duration: 0.2s;
   animation-name: gradual-growth;
 }
+
+@keyframes gradual-growth {
+  0% {background-size: 0%;}
+  100% {background-size: 65%;}
