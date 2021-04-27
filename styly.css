@@ -118,26 +118,6 @@ figcaption {
   font-size: 1rem;
 }
 
-/* ------------ responsive design ------------ */
-
-@media (min-width: 840px) {
-  .main__rules {
-    max-width: 750px;
-  }
-  
-  .main__instructions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .instructions__block {
-    margin: 0;
-    width: 45%;
-    margin: 20px 0;
-  }
-}
-
 
 /* ---------------- play -------------- */
 
@@ -211,6 +191,8 @@ figcaption {
   background-color: var(--btn-hover);
   cursor: pointer;
   outline: none;
+  outline: 1px solid white;
+
 }
 
 button:nth-child(10n) {
@@ -237,3 +219,25 @@ button:nth-child(10n) {
 @keyframes gradual-growth {
   0% {background-size: 0%;}
   100% {background-size: 65%;}
+
+
+
+  /* ------------ responsive design ------------ */
+
+@media (min-width: 840px) {
+  .main__rules {
+    max-width: 750px;
+  }
+  
+  .main__instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .instructions__block {
+    margin: 0;
+    width: 45%;
+    margin: 20px 0;
+  }
+}
