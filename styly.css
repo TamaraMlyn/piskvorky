@@ -13,8 +13,7 @@ html { box-sizing: border-box;
   --green-hover: #1cbb96;
   --blue: #0197f6;
   --blue-hover: #0090e9;
-  --btn-color: #BAB0D6;
-  --btn-hover: #D5C8E1;
+  --btn-hover: #b4aaca;
 }
 
 body {
@@ -190,9 +189,6 @@ figcaption {
 .game__board button:focus {
   background-color: var(--btn-hover);
   cursor: pointer;
-  outline: none;
-  outline: 1px solid white;
-
 }
 
 button:nth-child(10n) {
