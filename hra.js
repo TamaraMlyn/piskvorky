@@ -28,7 +28,7 @@ const addIcon = (event) => {
         confirm('Vyhrává hráč s kolečkem. Spustit novou hru?');
         location.reload();
       }
-    }, 300)
+    }, 200)
   }
 
 };
@@ -73,18 +73,20 @@ const isWinningMove = (field) => {
   const origin = getPosition(field);
   const symbol = getSymbol(field);
 
+
   let i;
 
-  let inRow = 1 // vybraná je 1
+  //// checking row
+  let inRow = 1 // 1 is selected
 
-  // podivej se doleva
+  // to the left
   i = origin.column;
   while (i > 0 && symbol === getSymbol(getField(origin.row, i - 1))) {
     inRow++;
     i--
   }
 
-  //podivej se doprava
+  // to the right
   i = origin.column;
   while (
     i < boardSize - 1 && 
@@ -98,9 +100,17 @@ const isWinningMove = (field) => {
     return true;
   }
 
+  /// checking column
   let inColumn = 1;
 
-  //podivej se nahoru
+  // up
+  i = origin.row
+	while (i > 0 && symbol === getSymbol(getField(i - 1, origin.column))) {
+		inColumn++
+		i--
+	}
+
+  // down
   i = origin.row;
   while (
     i < boardSize - 1 &&
