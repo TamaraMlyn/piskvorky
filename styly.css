@@ -1,10 +1,12 @@
-html { box-sizing: border-box; 
+html {
+  box-sizing: border-box;
 }
 
-*, 
-*::after, 
-*::before { box-sizing: inherit; }
-
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 
 :root {
   --primary-color: #ffffff;
@@ -17,7 +19,6 @@ html { box-sizing: border-box;
 }
 
 body {
-
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
@@ -40,7 +41,8 @@ body {
   width: 100%;
 }
 
-.main, .main__image {
+.main,
+.main__image {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -51,10 +53,9 @@ h1 {
   margin: 3rem 0 2rem 0;
 }
 
-p { 
+p {
   padding: 1rem;
 }
-
 
 /* ----------- buttons ----------- */
 
@@ -85,7 +86,6 @@ p {
   background-color: var(--blue-hover);
 }
 
-
 /* ------------- rules ------------ */
 .list {
   margin: 1rem 3rem;
@@ -104,7 +104,6 @@ p {
   vertical-align: -0.1em;
 }
 
-
 /* ------------ images + descriptions ------------ */
 
 .instructions__picture {
@@ -116,7 +115,6 @@ figcaption {
   font-weight: lighter;
   font-size: 1rem;
 }
-
 
 /* ---------------- play -------------- */
 
@@ -173,7 +171,7 @@ figcaption {
   flex-wrap: wrap;
   width: 100%;
   border: 1px solid black;
-  background-image: linear-gradient(#C6B8D9, #F4D8E7)
+  background-image: linear-gradient(#c6b8d9, #f4d8e7);
 }
 
 .game__board button {
@@ -203,7 +201,7 @@ button:nth-child(10n) {
   background-image: url('images/cross.svg');
 }
 
-.board__field--circle, 
+.board__field--circle,
 .board__field--cross {
   background-repeat: no-repeat;
   background-position: center;
@@ -213,18 +211,21 @@ button:nth-child(10n) {
 }
 
 @keyframes gradual-growth {
-  0% {background-size: 0%;}
-  100% {background-size: 65%;}
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 65%;
+  }
+}
 
-
-
-  /* ------------ responsive design ------------ */
+/* ------------ responsive design ------------ */
 
 @media (min-width: 840px) {
   .main__rules {
     max-width: 750px;
   }
-  
+
   .main__instructions {
     display: flex;
     flex-wrap: wrap;
